@@ -1,9 +1,7 @@
+import ProductPage from './pages/Product-page';
+
 function App() {
-  return (
-    <>
-      <h1>Lorem ipsm dolor sit amet</h1>
-    </>
-  )
+  return <ProductPage/>;
 }
 
-export default App
+export default App;

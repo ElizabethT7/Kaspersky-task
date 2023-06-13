@@ -2,10 +2,12 @@ import Breadcrumb from '../components/Breadcrumb';
 import TabList from '../components/Tab-list';
 import backgroundImage from '../assets/image/background.png';
 import tabs from '../assets/tags.json';
+import products from '../assets/cards.json';
+import ProductList from '../components/Product-list';
 
 function ProductPage() {
   return (
-    <main className='w-full relative'>
+    <main className='w-full mb-10 relative'>
       <div className="max-w-swd mx-auto pt-3 relative z-10">
         <Breadcrumb />
         <section className="max-w-[664px] w-[60%]">
@@ -21,9 +23,9 @@ function ProductPage() {
           </p>
           <TabList tabs={tabs.data}/>
         </section>
-        <section className="max-w-swd">
-
-        </section>
+        <div className="max-w-swd">
+          <ProductList products={products.data} />
+        </div>
       </div>
       <img className="w-[850px] h-[578px] absolute right-0 top-0 object-contain z-0" src={backgroundImage} alt="Background image"></img>
     </main>

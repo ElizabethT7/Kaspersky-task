@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 import Tab from './Tab';
 
 function TabList({tabs}) {

@@ -12,6 +12,7 @@ export default {
       },
       colors: {
         grey: {
+          'extra-light': '#cccccc',
           'light': '#666666',
           'medium': '#444444',
           'dark': '#1D1D1B',
@@ -25,9 +26,14 @@ export default {
       },
       fontSize: {
         'smc': ['14px', '17px'],
+        'lmc': ['16px', '20px'],
         'lgc': ['18px', '22px'],
+        '2lgc': ['21px', '24px'],
         'xlc': ['21px', '25px'],
         '4xlc': ['40px', '48px'],
+      },
+      scale: {
+        '120': '1.2',
       }
     },
   },

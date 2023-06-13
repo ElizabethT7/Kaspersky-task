@@ -1,16 +1,13 @@
-import { useState } from 'react';
+function Tab({title, setActive, id, icon, checkClass}) {
 
-function Tab({title, icon, iconActive}) {
-
-  const [active, setActive] = useState(false);
-  const handleClick = () => {
-    !active ? setActive(true) : setActive(false);
+  const onHandleClick = (e) => {
+    setActive(+e.target.dataset.index);
   }
 
   return (
-    <div className="w-[88px] h-[69px] py-3 flex flex-col justify-end text-smc font-normal" onClick={handleClick}>
-      <img className="mx-auto mb-2" src={active ? iconActive : icon} alt='Tab image'></img>
-      <p className={active ? "text-green-light text-center" : "text-grey-dark text-center"}>{title}</p>
+    <div className="w-[88px] h-[69px] py-3 flex flex-col justify-end text-smc font-normal" data-index={id} onClick={onHandleClick}>
+      <img className="mx-auto mb-2" src={icon} alt='Tab image' data-index={id}></img>
+      <p className={checkClass} data-index={id}>{title}</p>
     </div>
   )
 }

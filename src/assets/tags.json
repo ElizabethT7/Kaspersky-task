@@ -1,35 +1,37 @@
 {
   "data": [
     {
-      "id": "1",
+      "id": 1,
       "icon": "src/assets/svg/tag-all.svg",
       "iconActive": "src/assets/svg/tag-all-active.svg",
-      "text": "All"},
+      "text": "All"
+    },
     {
-      "id": "2",
+      "id": 2,
       "icon": "src/assets/svg/windows.svg",
       "iconActive": "src/assets/svg/windows-active.svg",
-      "text": "Windows"},
+      "text": "Windows"
+    },
     {
-      "id": "3",
+      "id": 3,
       "icon": "src/assets/svg/macOs.svg",
       "iconActive": "src/assets/svg/macOs-active.svg",
       "text": "macOS"
     },
     {
-      "id": "4",
+      "id": 4,
       "icon": "src/assets/svg/android.svg",
       "iconActive": "src/assets/svg/android-active.svg",
       "text": "Android"
     },
     {
-      "id": "5",
+      "id": 5,
       "icon": "src/assets/svg/iOS.svg",
       "iconActive": "src/assets/svg/iOS-active.svg",
       "text": "iPhone & iPad"
     },
     {
-      "id": "6",
+      "id": 6,
       "icon": "src/assets/svg/tools.svg",
       "iconActive": "src/assets/svg/tools-active.svg",
       "text": "Free tools"

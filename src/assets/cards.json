@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Kaspersky Anti-Virus",
+      "reviews": 1952,
+      "description": "Essential antivirus protection for Windows PCs",
+      "price": 29.99
+    },
+    {
+      "id": 2,
+      "title": "Kaspersky Anti-Virus",
+      "reviews": 1952,
+      "description": "Essential antivirus protection for Windows PCs",
+      "price": 29.99
+    },
+    {
+      "id": 3,
+      "title": "Kaspersky Anti-Virus",
+      "reviews": 1952,
+      "description": "Essential antivirus protection for Windows PCs",
+      "price": 29.99
+    },
+    {
+      "id": 4,
+      "title": "Kaspersky Anti-Virus",
+      "reviews": 1952,
+      "description": "Essential antivirus protection for Windows PCs",
+      "price": 29.99
+    }
+  ]
+}

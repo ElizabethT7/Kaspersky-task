@@ -5,8 +5,8 @@ import {numberFormat} from "../utils";
 
 function Product({product}) {
     return (
-      <div className="w-[256px] mr-7 mb-6 flex flex-col items-center text-smc font-normal rounded overflow-hidden relative">
-        <div className="w-[256px] mt-3 relative z-30">
+      <div className="w-[256px] mr-7 last:mr-0 flex flex-col items-center text-smc font-normal rounded overflow-hidden relative">
+        <div className="w-[256px] relative z-30">
           <img className="mx-auto" src={icon} alt="Product icon" />
           <div className="mx-4">
             <h2 className="max-w-[120px] mx-auto mb-7 text-lgc font-normal text-grey-dark text-center">
@@ -36,7 +36,7 @@ function Product({product}) {
             </button>
           </div>
         </div>
-        <img className="[256px] scale-120 absolute left-0 top-20 z-20" src={productBg} alt='background'></img>
+        <img className="[256px] scale-120 absolute left-0 top-16 z-20" src={productBg} alt='background'></img>
         <div className="w-full h-1 bg-green-light z-40"></div>
       </div>
     )

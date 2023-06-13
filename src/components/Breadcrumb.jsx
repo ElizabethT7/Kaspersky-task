@@ -7,8 +7,8 @@ function Breadcrumb() {
     <div className="max-w-swd flex items-center mb-6">
       {crumbs.map((crumb) => (
         <Link className="text-center" to={crumb} key={crumb}>
-          <span className="text-xs font-light text-center text-grey-light">{crumb}</span>
-          <span className="inline-block w-1 h-2 my-1 mx-2 bg-crumb-divided"></span>
+          <span className="text-xs font-light text-center text-grey-light dark:text-grey-extra-light">{crumb}</span>
+          <span className="inline-block w-1 h-2 my-1 mx-2 bg-crumb-divided text-grey-light dark:text-grey-extra-light"></span>
         </Link>
       ))}
     </div>

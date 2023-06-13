@@ -5,7 +5,7 @@ function Tab({title, setActive, id, icon, checkClass}) {
   }
 
   return (
-    <div className="w-[88px] h-[69px] py-3 flex flex-col justify-end text-smc font-normal" data-index={id} onClick={onHandleClick}>
+    <div className="w-[88px] h-[69px] py-3 flex flex-col justify-end text-smc font-normal text-grey-dark text-center dark:text-white" data-index={id} onClick={onHandleClick}>
       <img className="mx-auto mb-2" src={icon} alt='Tab image' data-index={id}></img>
       <p className={checkClass} data-index={id}>{title}</p>
     </div>

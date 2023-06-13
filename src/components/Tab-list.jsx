@@ -16,7 +16,7 @@ function TabList({tabs}) {
           id={tab.id}
           title={tab.text}
           icon={activeIndex === tab.id ? tab.iconActive : tab.icon}
-          checkClass={activeIndex === tab.id ? "text-green-light text-center" : "text-grey-dark text-center"}
+          checkClass={activeIndex === tab.id ? "text-green-light text-center" : "text-grey-dark text-center dark:text-white"}
           setActive={handleClick}
         />
       ))}

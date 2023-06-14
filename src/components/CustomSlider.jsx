@@ -15,7 +15,7 @@ function CustomSlider(props) {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 2,
-    initialSlide: 1,
+    initialSlide: 0,
     adaptiveHeight: true,
     centerPadding: '0',
     responsive: [

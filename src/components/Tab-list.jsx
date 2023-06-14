@@ -9,20 +9,18 @@ function TabList({tabs}) {
   }
 
   return (
-    <div className="hidden w-[506px] tablet:flex flex-col">
-      <div className="w-[506px] flex">
+    <div className="hidden w-[506px] tablet:flex border-b-[#AEAEAE] border-b-2">
       {tabs && tabs.map((tab) => (
         <Tab 
           key={tab.id}
           id={tab.id}
           title={tab.text}
           icon={activeIndex === tab.id ? tab.iconActive : tab.icon}
-          checkClass={activeIndex === tab.id ? "text-green-light text-center" : "text-grey-dark text-center dark:text-white"}
+          checkClass={activeIndex === tab.id ? "text-green-light text-center pointer" : "text-grey-dark text-center dark:text-grey-extra-light desktop:dark:text-white pointer"}
+          border={activeIndex === tab.id ? "w-[88px] h-[69px] py-3 flex flex-col justify-end text-smc font-normal text-center border-b-green-light border-b-4 pointer" : "w-[88px] h-[69px] py-3 flex flex-col justify-end text-smc font-normal text-center pointer"}
           setActive={handleClick}
         />
       ))}
-      </div>
-      <div className="block desktop:hidden ml-6 w-[90%]l h-[1px] bg-[#AEAEAE]"></div>
     </div>
   )
 }

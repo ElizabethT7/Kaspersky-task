@@ -27,7 +27,7 @@ function ProductPage() {
           <Title isMobile={isMobile} />
           <div className="block tablet:hidden desktop:block w-16 h-[1px] bg-[#AEAEAE]"></div>
           <Description isMobile={isMobile}/>
-          <div>
+          <div className="flex">
             {isMobile ?
               <TabSelect tabs={tabs.data}/>
               :

@@ -18,9 +18,9 @@ function ProductPage() {
 
   return (
     <main className='w-full mb-20 relative'>
-      <div className="max-w-[320px] mobile:max-w-[460px] tablet:max-w-[600px] laptop:max-w-[658px] desktop:max-w-swd mx-auto pt-3 relative z-10">
+      <div className="max-w-[336px] mobile:max-w-[460px] tablet:max-w-[600px] laptop:max-w-[658px] desktop:max-w-swd mx-auto pt-3 relative z-10">
         <Breadcrumb />
-        <section className="max-w-[664px] laptop:px-0 w-full mb-2">
+        <section className="max-w-[664px] mt-[184px] mobile:mt-0 laptop:px-0 w-full mb-2">
           <span className="inline-block mb-12 desktop:mb-6 px-10 bg-yellow-medium rounded-[20px] py-[7.5px] text-lmc mobile:text-xlc font-bold text-grey-dark">
             If you need an Special Offer Block
           </span>

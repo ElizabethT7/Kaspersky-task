@@ -4,7 +4,7 @@ const crumbs = ['Home', 'Sub Page 2', 'Sub Page 3', 'Sub Page 4']
 
 function Breadcrumb() {
   return (
-    <div className="max-w-swd flex items-center mb-6">
+    <div className="hidden max-w-swd mobile:flex items-center mb-6">
       {crumbs.map((crumb) => (
         <Link className="text-center" to={crumb} key={crumb}>
           <span className="text-xs font-light text-center text-grey-light dark:text-grey-extra-light">{crumb}</span>

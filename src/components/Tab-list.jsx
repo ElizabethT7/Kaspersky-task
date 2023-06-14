@@ -10,8 +10,8 @@ import { ReactComponent as Tools } from '../assets/svg/tools.svg';
 const style = {
   "checkClass": "text-grey-dark text-center dark:text-grey-extra-light desktop:dark:text-white pointer",
   "checkClassActive": "text-green-light text-center pointer",
-  "border": "w-[88px] h-[69px] py-3 flex flex-col justify-end text-smc font-normal text-center pointer",
-  "borderActive": "w-[88px] h-[69px] py-3 flex flex-col justify-end text-smc font-normal text-center border-b-green-light border-b-4 pointer",
+  "border": "w-[89px] h-[72px] py-3 flex flex-col justify-end text-smc font-normal text-center pointer",
+  "borderActive": "w-[89px] h-[72px] py-3 flex flex-col justify-end text-smc font-normal text-center border-b-green-light border-b-4 pointer",
   "icon": "mx-auto mb-2 text-grey-dark dark:text-grey-extra-light desktop:dark:text-white",
   "iconActive": "mx-auto mb-2 text-green-light",
 }
@@ -24,7 +24,7 @@ function TabList({tabs}) {
   }
 
   return (
-    <div className="hidden w-[540px] tablet:flex border-b-[#AEAEAE] border-b-2">
+    <div className="hidden w-[540px] tablet:flex border-b-[#AEAEAE] border-b-2 desktop:border-b-0">
       <Tab id={tabs[0].id}
            title={tabs[0].text}
            checkClass={activeIndex === tabs[0].id ? style.checkClassActive : style.checkClass}

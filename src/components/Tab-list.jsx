@@ -9,7 +9,8 @@ function TabList({tabs}) {
   }
 
   return (
-    <div className="flex">
+    <div className="hidden w-[506px] tablet:flex flex-col">
+      <div className="w-[506px] flex">
       {tabs && tabs.map((tab) => (
         <Tab 
           key={tab.id}
@@ -20,8 +21,10 @@ function TabList({tabs}) {
           setActive={handleClick}
         />
       ))}
+      </div>
+      <div className="block desktop:hidden ml-6 w-[90%]l h-[1px] bg-[#AEAEAE]"></div>
     </div>
   )
 }
     
-  export default TabList;
+export default TabList;

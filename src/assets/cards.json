@@ -27,6 +27,27 @@
       "reviews": 1952,
       "description": "Essential antivirus protection for Windows PCs",
       "price": 29.99
+    },
+    {
+      "id": 5,
+      "title": "Kaspersky Anti-Virus",
+      "reviews": 1952,
+      "description": "Essential antivirus protection for Windows PCs",
+      "price": 29.99
+    },
+    {
+      "id": 6,
+      "title": "Kaspersky Anti-Virus",
+      "reviews": 1952,
+      "description": "Essential antivirus protection for Windows PCs",
+      "price": 29.99
+    },
+    {
+      "id": 7,
+      "title": "Kaspersky Anti-Virus",
+      "reviews": 1952,
+      "description": "Essential antivirus protection for Windows PCs",
+      "price": 29.99
     }
   ]
 }

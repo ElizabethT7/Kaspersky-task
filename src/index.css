@@ -18,8 +18,26 @@ body {
 }
 
 .slick-list {
-  max-width: 1107px;
+  max-width: 400px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .slick-list {
+    max-width: 290px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .slick-list {
+    max-width: 571px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slick-list {
+    max-width: 1107px;
+  }
 }
 
 .slick-slide,
@@ -33,7 +51,7 @@ body {
 }
 
 .slick-dots {
-  bottom: -48px !important;
+  bottom: -40px !important;
 }
 
 .slick-dots li button {

@@ -31,11 +31,25 @@ export default {
         'lgc': ['18px', '22px'],
         '2lgc': ['21px', '24px'],
         'xlc': ['21px', '25px'],
+        '3xlc': ['32px', '36px'],
         '4xlc': ['40px', '48px'],
       },
       scale: {
         '120': '1.2',
       }
+    },
+    screens: {
+      'mobile': '480px',
+      // => @media (min-width: 480px) { ... },
+
+      'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
     },
   },
   plugins: [],

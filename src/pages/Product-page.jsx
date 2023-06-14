@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
 import Breadcrumb from '../components/Breadcrumb';
 import TabList from '../components/Tab-list';
 import backgroundImage from '../assets/image/background.png';
 import tabs from '../assets/tags.json';
-/*import products from '../assets/cards.json';
-import ProductList from '../components/Product-list';
-import SliderControls from '../components/Slider';*/
-import Slider from '../components/Slider';
+import products from '../assets/cards.json';
+import CustomSlider from '../components/CustonSlider';
 
 function ProductPage() {
   return (
-    <main className='w-full mb-10 relative'>
+    <main className='w-full mb-20 relative'>
       <div className="max-w-swd mx-auto pt-3 relative z-10">
         <Breadcrumb />
         <section className="max-w-[664px] w-[60%] mb-2">
@@ -29,17 +26,12 @@ function ProductPage() {
           <TabList tabs={tabs.data}/>
         </section>
       </div>
-      <Slider />
+      <div className="max-w-mwd mx-auto relative z-20">
+        <CustomSlider products={products.data}/>
+      </div>
       <div className="w-full h-[658px] absolute right-0 top-0 bg-white dark:bg-grey-dark"></div>
       <img className="w-[850px] h-[578px] absolute right-0 top-0 object-contain z-0" src={backgroundImage} alt="Background image"></img>
     </main>
   );
 }
 export default ProductPage;
-
-/*
-      <div className="max-w-mwd mx-auto relative">
-          <ProductList products={products.data} />
-          <SliderControls />
-      </div>
- */

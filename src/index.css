@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Kaspersky Sans, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0 auto;
+}
+
+.slick-list {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .slick-list {
+    max-width: 290px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .slick-list {
+    max-width: 571px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .slick-list {
+    max-width: 1107px;
+  }
+}
+
+.slick-slide,
+.slick-active,
+.slick-current {
+  width: 278px !important;
+}
+
+.slick-slide div {
+  margin-right: 0;
+}
+
+.slick-dots {
+  bottom: -40px !important;
+}
+
+.slick-dots li button {
+  width: 10px !important;
+  height: 10px !important;
+  border: 1px solid #00A88E !important;
+  background: white !important;
+  border-radius: 50% !important;
+}
+
+.slick-dots li.slick-active {
+  width: 20px !important;
+}
+
+.slick-dots li.slick-active button {
+  background: #00A88E !important;
+}
+
+.slick-dots li button::before {
+  content: "" !important;
+}
+
+.slick-dots li.slick-active button::before {
+  content: "" !important;
+  color: #00A88E !important;
+}

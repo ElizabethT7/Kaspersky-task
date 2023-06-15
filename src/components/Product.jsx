@@ -8,7 +8,7 @@ function Product({product}) {
       <div className="w-[256px] mr-7 last:mr-0 flex flex-col items-center text-smc font-normal rounded overflow-hidden relative">
         <div className="w-[256px] ml-auto mr-auto relative z-30">
           <img className="mx-auto" src={icon} alt="Product icon" />
-          <div className="mx-4">
+          <div className="mt-[-14px] mx-4">
             <h2 className="max-w-[120px] mx-auto mb-7 text-lgc font-normal text-grey-dark text-center">
               {product.title}
             </h2>
@@ -18,7 +18,7 @@ function Product({product}) {
               <span>Reviews</span>
             </div>
             <div className="w-10 h-[1px] mb-2 bg-grey-extra-light ml-[88px]"></div>
-            <p className="mb-7 pr-4 text-lgc font-normal text-grey-dark text-center">
+            <p className="mb-12 pr-4 text-lgc font-normal text-grey-dark text-center">
               {product.description}
             </p>
             <div className="mb-2 text-center">

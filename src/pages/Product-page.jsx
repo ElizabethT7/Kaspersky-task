@@ -18,14 +18,14 @@ function ProductPage() {
 
   return (
     <main className='w-full mb-20 relative'>
-      <div className="max-w-[336px] mobile:max-w-[460px] tablet:max-w-[600px] laptop:max-w-[658px] desktop:max-w-swd mx-auto pt-3 relative z-10">
+      <div className="max-w-[336px] mobile:max-w-[460px] tablet:max-w-[600px] laptop:max-w-[658px] desktop:max-w-swd mx-auto pt-2 relative z-10">
         <Breadcrumb />
         <section className="max-w-[664px] mt-[184px] mobile:mt-0 laptop:px-0 w-full mb-2">
           <span className="inline-block mb-12 desktop:mb-6 px-10 bg-yellow-medium rounded-[20px] py-[7.5px] text-lmc mobile:text-xlc font-bold text-grey-dark">
             If you need an Special Offer Block
           </span>
           <Title isMobile={isMobile} />
-          <div className="block tablet:hidden desktop:block w-16 h-[1px] bg-[#AEAEAE]"></div>
+          <div className="block dark:tablet:hidden desktop:block w-16 h-[1px] bg-[#AEAEAE]"></div>
           <Description isMobile={isMobile}/>
           <div className="flex">
             {isMobile ?
@@ -36,7 +36,7 @@ function ProductPage() {
           </div>
         </section>
       </div>
-      <div className="overflow-x-hidden h-[498px] max-w-[520px] tablet:max-w-[768px] laptop:max-w-[768px] desktop:max-w-mwd mx-[24px] mobile:mx-auto relative z-20">
+      <div className="overflow-x-hidden h-[506px] max-w-[520px] tablet:max-w-[768px] laptop:max-w-[768px] desktop:max-w-mwd mx-[24px] mobile:mx-auto relative z-20">
         <CustomSlider products={products.data}/>
       </div>
       <div className="w-full h-[578px] desktop:h-[658px] absolute right-0 top-0 bg-white dark:bg-grey-dark"></div>
